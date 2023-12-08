@@ -1,353 +1,292 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- normalize обовязково повинен бути піключенний першим ніж style -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
-    	<div class="container">
-    		<div class="header__inner">
-    			<a class="logo" href="" >
-    				<img class__img="logo" src="images/logo.jpg" alt="logo">
-    			</a>
-    			<nav class="menu">
-    				<ul class="menu__list">
-    					<li class="menu__item">
-    						<a class="menu__link" href="#info">Опис</a>
-    					</li>
-    					<li class="menu__item">
-    						<a class="menu__link" href="#performance">Характеристики</a>
-    					</li>
-    					<li class="menu__item">
-    						<a class="menu__link" href="#price">Вартість</a>
-    					</li>
-    				</ul>
-    			</nav>
-    		</div>
-    	</div>
-    </header>
-    <section class="bike">
-    	<div class="container">
-    		<div class="bike__inner">
-    			<div class="bike__colum">
-    				<h1 class="bike__title">
-    					Xiaomi Himo C26
-    				</h1>
-    				<h3 class="bike__subtitle">
-    					Електровелосипед
-    				</h3>
-    				<p class="bike__text">Повна свобода пересування і надійний транспорт для подорожей на будь-якій відстані</p>
-    				<p class="bike__text">HIMO C26 – являє собою новий електровелосипед від Xiaomi, який розрахований як на міську, так і на позашляхову їзду. Він має потужний двигун і вмістимий акумулятор, завдяки чому здатний їздити на одному заряду до 100 км, що однозначно більше, ніж у більшості конкурентів. А великі колеса з пневматичними шинами, дисковими гальмами, 7-швидкісною коробкою передач і ергономічним сидінням роблять кожну поїздку набагато приємнішою. </p>
-    				<a class="bike__link" href="#price">ПРИДБАТИ</a>
-    			</div>
-    			<div class="bike__colum bike__colum-slider">
-    				<div class="bike-slider">
-    					<img class="bike-slider__item" src="images/bike-1.jpg" alt="">
-					    <img class="bike-slider__item" src="images/bike-2.jpg" alt="">
-					    <img class="bike-slider__item" src="images/bike-3.jpg" alt="">
-					    <img class="bike-slider__item" src="images/bike-4.jpg" alt="">
-    				</div>
-    				<ul class="bike__list">
-    					<li class="bike__list-item">
-    						<span class="bike__list-num">до 100 км</span>
-    						<span class="bike__list-text">Запас ходу</span>
-    					</li>
-    					<li class="bike__list-item">
-    						<span class="bike__list-num">25 км/год</span>
-    						<span class="bike__list-text">Макс швидкість</span>
-    					</li>
-    					<li class="bike__list-item">
-    						<span class="bike__list-num">3 режима їзди</span>
-    						<span class="bike__list-text">механический, гибридный, электрический</span>
-    					</li>
-    					<li class="bike__list-item">
-    						<span class="bike__list-num">25 кг</span>
-    						<span class="bike__list-text">вага</span>
-    					</li>
-    				</ul>
-    			</div>
-    		</div>
-    	</div>
-    </section>
-    <section class="info" id="info">
-        <div class="container">
-            <div class="info__inner">
-                <img class="info__img" src="images/info-img.jpg" alt="" >
-                <div class="info__list">
-                     <div class="info__item">
-                         <h4 class="info__item-title">
-                             Комфорт і безпека від HIMO
-                         </h4>
-                         <p class="info__item-text">
-                             Електровелосипед HIMO C26 дозволить швидко і комфортно дістатися до місця роботи або школи і бути не прив'язаним до міського транспорту. Велосипед має міцний корпус і вражаючий запас потужності, щоб стати надійним транспортним засобом в сучасних міських умовах. Легка і міцна рама, 26-дюймові колеса і 7-швидкісна трансмісія дозволяють впевнено пересуватися не тільки по асфальтованій дорозі, але і по складному заміському шосе.
-                         </p>
-                    </div>
-                    <div class="info__item">
-                          <h4 class="info__item-title">
-                             Міцна і легка рама
-                         </h4>
-                         <p class="info__item-text">
-                            Рама HIMO C26 виконана з міцного і легкого алюмінієвого сплаву і має високу надійність, та стійкість в аварійних ситуаціях, відмінною керованістью і комфортним рухом на будь-якій дорозі.
-                         </p>
-                    </div>
-                    <div class="info__item">
-                          <h4 class="info__item-title">
-                             Комбінація режимів для збільшення запасу потужності
-                         </h4>
-                         <p class="info__item-text">
-                             HIMO C26 має підвищений запас потужності. Його акумулятор 10,000 мАгод з інтелектуальною системою оптимізації енергії дозволяє проїхати до 60 км за один заряд в режимі електропривода. При використанні на деяких ділянках траси дальність дії фізичної сили збільшується до 100 км Максимальна швидкість ХІМО С26 становить 25 км/год
-                         </p>
-                    </div>
-                    <div class="info__item">
-                          <h4 class="info__item-title">
-                             Надійна трансмісія
-                         </h4>
-                         <p class="info__item-text">
-                             7-швидкісна система передачі забезпечує плавну і точну зміну передач, зручне управління швидкістю і надійну роботу. Перемикаючи шестерні, Ви зможете з мінімальним зусиллям заїхати на гірку і безпечно зїхати вниз.
-                         </p>
-                    </div>
-                    <div class="info__item">
-                          <h4 class="info__item-title">
-                             Вся інформація на РК-дисплеї
-                         </h4>
-                         <p class="info__item-text">
-                             Вся інформація на РК-дисплеї <br>
-                             Великий інформативний дисплей, що відображається на рейці керма, відображає всю важливу інформацію в реальному часі про HIMO C26. Ви зможете дізнатися дійсну швидкість руху, рівень заряду або пройдений шлях. Дисплей захищений від зовнішніх факторів за стандартом IPX7 і не боїться дощу і пилу.
-                         </p>
-                    </div>
-                    <div class="info__item">
-                          <h4 class="info__item-title">
-                            Зручне сідло
-                         </h4>
-                         <p class="info__item-text">
-                             HIMO C26 оснащена велосипедним сидінням від відомої марки Selle Royal. Тривимірна конструкція гелевого сідла забезпечує оптимальну еластичність і високий комфорт під час їзди.
-                         </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="performance" id="performance">
-        <div class="container">
-            <h4 class="performance__head">
-                Характеристики   
-            </h4>
-            <div class="performance__inner">
-               <div class="performance__items">
-                  <ul class="performance__list">
-                      <li class="performance__title">
-                          Загальні
-                      </li> 
-                      <li class="performance__line">
-                          <p class="performance__name">Виробник</p>
-                          <p class="performance__descr">Xiaomi</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Вид</p>
-                          <p class="performance__descr">Дорослий, дорожній, міський, електровелосипед, алюминева рама</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Колеса</p>
-                          <p class="performance__descr">26, подвійний алюміниевий кільце</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Электропривід</p>
-                          <p class="performance__descr">мотор 250W, розгін до 25 км/ч</p>
-                      </li>
-                  </ul>
-
-                  <ul class="performance__list">
-                      <li class="performance__title">
-                          Амортизація
-                      </li> 
-                      <li class="performance__line">
-                          <p class="performance__name">Тип амортизації</p>
-                          <p class="performance__descr">амортизуюча вилка (Hard tail)</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Вилка</p>
-                          <p class="performance__descr">пружинно-еластомірна</p>
-                      </li>
-                  </ul> 
-
-                  <ul class="performance__list">
-                      <li class="performance__title">
-                          Керування
-                      </li> 
-                      <li class="performance__line">
-                          <p class="performance__name">Руль</p>
-                          <p class="performance__descr">зігнутий, регульований підйом</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Манетки</p>
-                          <p class="performance__descr">триггеровані одноричагові, Shimano</p>
-                      </li>
-                  </ul> 
-
-                  <ul class="performance__list">
-                      <li class="performance__title">
-                         Характеристика трансмиссии 
-                      </li> 
-                      <li class="performance__line">
-                          <p class="performance__name">Кількість швидкостей</p>
-                          <p class="performance__descr">7</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Педалі</p>
-                          <p class="performance__descr">класичні</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Передний перемикач</p>
-                          <p class="performance__descr">1 зірка</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Задній перемикач</p>
-                          <p class="performance__descr">Shimano Tourney (прогулочний)</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Касета</p>
-                          <p class="performance__descr">7 зірок</p>
-                      </li>
-                  </ul> 
-
-                  <ul class="performance__list">
-                      <li class="performance__title">
-                          Тормоза
-                      </li> 
-                      <li class="performance__line">
-                          <p class="performance__name">Передній</p>
-                          <p class="performance__descr">дисковий механічний</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Задній</p>
-                          <p class="performance__descr">дисковий механічний</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Готовність до встановлення дискових</p>
-                          <p class="performance__descr">рама, вилка, втулка </p>
-                      </li>
-                  </ul> 
-
-                  <ul class="performance__list">
-                      <li class="performance__title">
-                          Різне
-                      </li> 
-                      <li class="performance__line">
-                          <p class="performance__name">Оснащення</p>
-                          <p class="performance__descr">електричне обладнання, дзвінок</p>
-                      </li>
-                      <li class="performance__line">
-                          <p class="performance__name">Вага</p>
-                          <p class="performance__descr">25 кг</p>
-                      </li>
-                  </ul>  
-               </div>
-               <img src="images/performance-img.jpg" alt="" class="performance__img">
-            </div>
-        </div>
-    </section>
-    <div class="slider">
-        <div class="container">
-            <div class="slider__items">
-                <div class="slider__item">
-                    <img class="slider__img" src="images/slider-1.jpg">  
-                </div>
-                <div class="slider__item">
-                    <img class="slider__img" src="images/slider-2.jpg">  
-                </div>
-                <div class="slider__item">
-                    <img class="slider__img" src="images/slider-3.jpg">  
-                </div>   
-            </div>  
-        </div>
-    </div>
-    <secrion class="price" id="price">
-        <div class="container">
-            <div class="price__inner">
-                <form class="form">
-                    <h4 class="form__title">
-                        Замовити
-                    </h4>
-                    <p class="form__text">
-                        Якщо ви хочете замовити велосипед, залиште свій контакт і наш менеджер передзвонить вам незабаром
-                    </p>
-                    <input class="form__input-name" type="text" placeholder="ім'я">
-                    <input class="form__input-phone" type="tel" placeholder="телефон">
-                    <p class="form__input-text">
-                        виберіть потрібний колір
-                    </p>
-                    <div class="form__label-box">
-                        <label class="form__lable">
-                            <input class="form__input-radio" type="radio" name="radio">
-                            <div class="form__bike">
-                                <img class="form__bike-img" src="images/bike-grey.jpg">
-                                <p class="form__bike-price"><span>33999 грн.</span></p>
-                            </div>
-                            <div class="form__radio_style form__radio_style--grey"></div>
-                        </label>
-                        <label class="form__lable">
-                            <input class="form__input-radio" type="radio" name="radio" checked>
-                            <div class="form__bike">
-                                <img class="form__bike-img" src="images/bike-white.jpg">
-                                <!-- checed для того щоб по дефолту цей елемент був включений -->
-                                <p class="form__bike-price"><span>32999 грн.</span></p>
-                            </div>
-                            <div class="form__radio_style form__radio_style--white"></div>
-                        </label>
-                        <label class="form__lable">
-                            <input class="form__input-radio" type="radio" name="radio">
-                            <div class="form__bike">
-                                <img class="form__bike-img" src="images/bike-red.jpg">
-                                <p class="form__bike-price"><span>35999 грн.</span></p>
-                            </div>
-                            <div class="form__radio_style form__radio_style--red"></div>
-                        </label>
-                    </div>
-                    <button class="form__btn" type="submit" href="#">Замовити</button>
-                </form>
-            </div>
-        </div>
-    </secrion>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__inner">
-                <a href="#" class="footer__link">Політика конфіденційності</a>
-                <div class="footer__social">
-                    <a href="" class="footer__social-link">
-                        <img class="footer__social-img" src="images/instagram.svg" alt="insta">
-                    </a>
-                    <a href="" class="footer__social-link">
-                        <img class="footer__social-img"src="images/facebook.svg" alt="fb">
-                    </a>
-                </div>
-                <div class="footer__contacts">
-                    <a class="footer__contacts-link" href="tel:+380506777777">
-                        <img class="footer__contacts-img" src="images/tel.svg" alt="tel">
-                       <span>+38 050 677 77 77</span>
-                    </a>
-                    <a class="footer__contacts-link" href="mailto:elektrobikeukr@gmail.com">
-                       <img class="footer__contacts-img" src="images/email.svg" alt="mail">
-                       <span>elektrobikeukr@gmail.com</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-
-
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/main.js"></script>
+	
+<div class="wrapper">
+	<header class="header header-main">
+		<div class="container">
+			<div class="header__inner">
+				<a href="index.html" class="logo">
+					<img src="images/logo.svg" alt="logo" class="logo__img">
+				</a>
+				<nav class="menu">
+					<button class="menu__btn">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<ul class="menu__list">
+						<li class="menu__list-item">
+							<a href="new-cars.html" class="menu__list-link">NEW CARS</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">PRE-OWNED CARS</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">FINANCE</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="#" class="menu__list-link">LEASE VS BUY</a>
+						</li>
+						<li class="menu__list-item">
+							<a href="contacts.html" class="menu__list-link">CONTACT US</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<main class="main">
+		<section class="top">
+			<div class="container">
+				<h1 class="title">
+				Leasing From D&M
+			    </h1>
+			    <a href="#" class="top__link">
+			    	FIND A CAR
+			    </a>
+			</div>
+		</section>
+		<div class="sliper">
+			<div class="swiper">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image: url(images/slide-1.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(images/slide-2.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(images/slide-3.jpg);"></div>
+					<div class="swiper-slide" style="background-image: url(images/slide-4.jpg);"></div>
+				</div>
+				 <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<section class="why-lease">
+			<div class="container">
+				<h2 class="section-title">
+					Why Lease with D&M?
+				</h2>
+				<ul class="why-lease__list">
+					<li class="why-lease__item">
+						<img class="why-lease__item-img" src="images/why-lese-1.svg" alt="">
+						<h3 class="why-lease__item-title">
+							Top Dealers
+						</h3>
+						<p class="why-lease__item-text">
+							TrueCar Certified Dealers compete for your business by providing discounted pricing on in-stock inventory.
+						</p>
+					</li>
+					<li class="why-lease__item">
+						<img class="why-lease__item-img" src="images/why-lese-2.svg" alt="">
+						<h3 class="why-lease__item-title">
+							Discounted Pricing
+						</h3>
+						<p class="why-lease__item-text">
+							View local inventory from the comfort of home and get access to guaranteed savings on the car of your choice.
+						</p>
+					</li>
+					<li class="why-lease__item">
+						<img class="why-lease__item-img" src="images/why-lese-3.svg" alt="">
+						<h3 class="why-lease__item-title">
+							Lower Payments
+						</h3>
+						<p class="why-lease__item-text">
+							Get discounted pricing when you shop for a car or truck using TrueCar and save on your lease payment.
+						</p>
+					</li>
+					<li class="why-lease__item">
+						<img class="why-lease__item-img" src="images/why-lese-4.svg" alt="">
+						<h3 class="why-lease__item-title">
+							Easy Upgrade
+						</h3>
+						<p class="why-lease__item-text">
+							Easy to upgrade to the newest vehicle model every few years if you would like to be modern and comfortable
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<section class="how-does">
+			<div class="container">
+				<div class="how-does__inner">
+					<h2 class="section-title">
+						How Does Leasing Work?
+					</h2>
+					<p class="how-does__text">
+						Leasing a vehicle is essentially entering into a long term rental agreement for that vehicle. Unlike a traditional car purchase, you don’t actually own the vehicle. Instead, a leasing company purchases the vehicle from the dealer on your behalf and then you make monthly payments to the leasing company for the duration of your lease. Some leases however, do provide the option to purchase the vehicle at the end of the lease.
+					</p>
+					<h4 class="how__does-title">
+						Similar to a short term car rental, there are rules that define:
+					</h4>
+					<ol class="how__does-list">
+						<li class="how__does-item">
+							How much you can drive, stated as annual miles (excess miles are charged at a specified rate)
+						</li>
+						<li class="how__does-item">
+							Types of damage that you may be liable for at the end of your lease
+						</li>
+						<li class="how__does-item">
+							The procedures and costs when you return the vehicle at the end of your lease
+						</li>
+					</ol>
+					<p class="how-does__text">
+						Lease contracts are a commitment and ending them early can be difficult and expensive so it is important to consider your circumstances carefully before you decide.
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="video">
+			<div class="container">
+				<h2 class="section-title video__title">
+					WELCOME TO D&M LEASING
+				</h2>
+				<p class="video__text">
+					Find out how easy it is to lease from D&M
+				</p>
+				<iframe class="video__content" width="1000" height="500" src="https://www.youtube.com/embed/T35nKm5xOf0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+				</iframe>
+			</div>
+		</section>
+		<section class="important">
+			<div class="container">
+				<h2 class="section-title important__title">
+					Important Things to Consider
+				</h2>
+				<p class="important__text">
+					Depending on your circumstances and what is important to you, a lease could be a great option for your next vehicle. Below are some important factors that may influence your decision.
+				</p>
+				<ul class="important__list">
+					<li class="important__item">
+						<img src="images/imp-1.jpg" alt="" class="important__item-img">
+						<p class="important__item-text">
+						Monthly payments on leases are generally 20% - 30% cheaper than loans
+					</p>
+					</li>
+					<li class="important__item">
+						<img src="images/imp-2.jpg" alt="" class="important__item-img">
+						<p class="important__item-text">
+						You may be eligible for a tax break if you use the leased vehicle for business purposes
+					</p>
+					</li>
+					<li class="important__item">
+						<img src="images/imp-3.jpg" alt="" class="important__item-img">
+						<p class="important__item-text">
+						Easy to upgrade to the newest vehicle model every few years
+					</p>
+					</li>
+					<li class="important__item">
+						<img src="images/imp-4.jpg" alt="" class="important__item-img">
+						<p class="important__item-text">
+						There are often fees charged if you drive more than your lease's mileage allowance
+					</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<nav class="footer__menu">
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item">
+						<p class="footer__menu-title">Products</p>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">Used</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">New</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">Sell your car</a>
+					</li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item">
+						<p class="footer__menu-title">Resources</p>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">Blog</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">FAQ</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">Contact us</a>
+					</li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item">
+						<p class="footer__menu-title">Work With TrueCar</p>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">Dealers</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">Partners</a>
+					</li>
+				</ul>
+				<ul class="footer__menu-list">
+					<li class="footer__menu-item">
+						<p class="footer__menu-title">About</p>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">About us</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">Team</a>
+					</li>
+					<li class="footer__menu-item">
+						<a href="#" class="footer__menu-link">Careers</a>
+					</li>
+				</ul>
+			</nav>
+			<ul class="app">
+				<li class="app_item">
+					<a href="" class="app__item-link">
+						<img class="app__item-img" src="images/appstore.svg" alt="appstore">
+					</a>
+				</li>
+				<li class="app_item">
+					<a href="" class="app__item-link">
+						<img class="app__item-img" src="images/googleplay.svg" alt="googleplay">
+					</a>
+				</li>
+			</ul>
+			<div class="footer__copy">
+				<p class="footer__copy-text">
+					For questions about the TrueCar Auto Buying Service please call 1-888-878-3227.
+					Certified Dealers are contractually obligated by TrueCar to meet certain customer service requirements and complete the TrueCar Dealer. 
+				</p>
+				<p class="footer__copy-text">
+					Certification Program.
+					TrueCar does not broker, sell, or lease motor vehicles. Unless otherwise noted, all vehicles shown on this website are offered for sale by licensed motor vehicle dealers. All vehicles are subject to prior sale. By accessing this website, you agree to the TrueCar Terms of Service and Privacy Policy.
+				</p>
+			</div>	
+			<nav class="copy__nav">
+				<ul class="copy__nav-list">
+					<li class="copy__nav-item">
+						<a href="#" class="copy__nav-link">Terms of Service</a>
+					</li>
+					<li class="copy__nav-item">
+						<a href="#" class="copy__nav-link">Privacy Policy</a>
+					</li>
+					<li class="copy__nav-item">
+						<a href="#" class="copy__nav-link">Do Not Sell My Personal Information</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+</div>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
